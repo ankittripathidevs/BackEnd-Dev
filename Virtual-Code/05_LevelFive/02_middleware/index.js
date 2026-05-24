@@ -12,13 +12,13 @@ const loggingMiddleware = (req, res, next) => {
   console.log("Logging Kra hu");
   next();
 };
-// loading middlware inti application
+// loading middlware integate application
 app.use(loggingMiddleware);
 
 const authMiddleware = (req, res, next) => {
   console.log("auth Kra hu");
-  res.send("chalo seeda ghar");
-  // next();
+  // res.send("chalo seeda ghar");
+  next();
 };
 app.use(authMiddleware);
 

@@ -18,9 +18,10 @@ app.use((req, res, next) => {
 // post-method
 app.post("/about", (req, res) => {
   console.log(req.body);
-//   res.status(400).send({ success: true }); // See thunderClient Status 
-//   res.status(200).send({ success: true }); 
-  res.status(201).send({ success: true }); 
+  // res.status(400).send({ success: true }); // See thunderClient Status
+  // res.status(400).send({ success: true });
+  // res.status(200).send({ success: true });
+  res.status(201).send({ success: true });
 });
 
 app.listen(port, () => {

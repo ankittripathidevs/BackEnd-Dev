@@ -8,15 +8,15 @@ app.use(express.json());
 app.get("/", (req, res) => {
   //  # Get Request Headers
   // (1) for getting all headers
-  //    console.log(req.headers);
+  // console.log(req.headers);
 
   // (2) for getting specific header
-  //    console.log(req.get("user-agent"));
-  //    console.log(req.get("host"));
+  //  console.log(req.get("user-agent"));
+  // console.log(req.get("host"));
 
   // (3) Set Response Headers
   // console.log(res.set("x-username", "msdhoni"));
-  console.log(res.header("x-username", "shaktimaan"));
+  // console.log(res.header("x-address", "new-delhi"));
 
   // (4) Remove Headers
   console.log(res.removeHeader("x-powered-by"));
